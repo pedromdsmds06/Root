@@ -8,4 +8,8 @@ python3 copyfail.py
 cd ~/Downloads
 wget https://github.com/hydralauncher/hydra/releases/download/v4.4.0/hydralauncher_4.4.0_amd64.deb
 sudo apt install ./hydralauncher_4.4.0_amd64.deb
+runuser -u guest-eieozj -- env \
+DISPLAY=:0 \
+XAUTHORITY=/var/run/lightdm/root/:0 \
+/opt/Hydra/hydralauncher> >
 ```
